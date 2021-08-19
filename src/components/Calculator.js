@@ -20,13 +20,20 @@ class Calculator extends React.Component {
       operation: newState.operation,
     }));
   }
+
+  updateDisplay() {
+    let { total, next, operation } = this.state;
+    total = total || '';
+    operation = operation || '';
+    next = next || '';
+    return `${total} ${operation} ${next}`;
   }
 
   render() {
     return (
       <div className="calculator">
         <div className="display">
-          0
+          {this.updateDisplay()}
         </div>
 
         <div className="keyboard">
