@@ -11,6 +11,15 @@ class Calculator extends React.Component {
       operation: null,
     };
   }
+
+  onClickHandler(buttonName) {
+    const newState = calculate(this.state, buttonName);
+    this.setState(() => ({
+      total: newState.total,
+      next: newState.next,
+      operation: newState.operation,
+    }));
+  }
   }
 
   render() {
