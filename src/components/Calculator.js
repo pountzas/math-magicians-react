@@ -15,13 +15,16 @@ const Calculator = () => {
   //   };
   // }
 
-  onClickHandler(buttonName) {
-    const newState = calculate(this.state, buttonName);
-    this.setState(() => ({
-      total: newState.total,
-      next: newState.next,
-      operation: newState.operation,
-    }));
+  function onClickHandler(buttonName) {
+    const newState = calculate({ total, next, operation }, buttonName);
+    setTotal(newState.total);
+    setNext(newState.next);
+    setOperation(newState.operation);
+    // this.setState(() => ({
+    //   total: newState.total,
+    //   next: newState.next,
+    //   operation: newState.operation,
+    // }));
   }
 
   updateDisplay() {
