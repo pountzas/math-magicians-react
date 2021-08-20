@@ -2,15 +2,18 @@ import React from 'react';
 import './Calculator.css';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
+const Calculator = () => {
+  const [total, setTotal] = useState(null);
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     total: null,
+  //     next: null,
+  //     operation: null,
+  //   };
+  // }
 
   onClickHandler(buttonName) {
     const newState = calculate(this.state, buttonName);
