@@ -27,12 +27,11 @@ const Calculator = () => {
     // }));
   }
 
-  updateDisplay() {
-    let { total, next, operation } = this.state;
-    total = total || '';
-    operation = operation || '';
-    next = next || '';
-    return `${total} ${operation} ${next}`;
+  function updateDisplay() {
+    const displayTotal = total || '';
+    const displayOperation = operation || '';
+    const displayNext = next || '';
+    return `${displayTotal} ${displayOperation} ${displayNext}`;
   }
 
   render() {
