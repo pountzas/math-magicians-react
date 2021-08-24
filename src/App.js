@@ -7,6 +7,7 @@ import {
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import CalculatorLink from './pages/CalculatorLink';
+import Quote from './pages/Quote';
 
 class App extends React.Component {
   constructor(props) {
