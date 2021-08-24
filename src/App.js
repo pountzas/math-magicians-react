@@ -18,7 +18,20 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Calculator />
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/calculator">
+              <CalculatorLink />
+            </Route>
+            <Route path="/quote">
+              <Quote />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     );
   }
