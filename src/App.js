@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import CalculatorLink from './pages/CalculatorLink';
 import Quote from './pages/Quote';
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
