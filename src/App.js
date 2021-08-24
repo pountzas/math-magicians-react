@@ -1,10 +1,10 @@
 import React from 'react';
-import Calculator from './components/Calculator';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
+import Calculator from './components/Calculator';
 
 class App extends React.Component {
   constructor(props) {
