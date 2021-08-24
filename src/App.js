@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Calculator from './components/Calculator';
+import CalculatorLink from './pages/CalculatorLink';
 
 class App extends React.Component {
   constructor(props) {
