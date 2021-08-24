@@ -5,6 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import CalculatorLink from './pages/CalculatorLink';
 
 class App extends React.Component {
