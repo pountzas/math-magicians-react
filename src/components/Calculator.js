@@ -7,19 +7,19 @@ const Calculator = () => {
   const [next, setNext] = useState(null);
   const [operation, setOperation] = useState(null);
 
-  function onClickHandler(buttonName) {
+  const onClickHandler = (buttonName) => {
     const newState = calculate({ total, next, operation }, buttonName);
     setTotal(newState.total);
     setNext(newState.next);
     setOperation(newState.operation);
-  }
+  };
 
-  function updateDisplay() {
+  const updateDisplay = () => {
     const displayTotal = total || '';
     const displayOperation = operation || '';
     const displayNext = next || '';
     return `${displayTotal} ${displayOperation} ${displayNext}`;
-  }
+  };
 
   return (
     <div className="calculator">
