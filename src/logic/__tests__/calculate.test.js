@@ -1,7 +1,7 @@
 import calculate from '../calculate';
 
 describe('calculate', () => {
-  test('it sould return a null object when AC button is used', () => {
+  test('it should return a null object when AC button is used', () => {
     const obj = {};
     expect(calculate(obj, 'AC')).toEqual({
       total: null,
