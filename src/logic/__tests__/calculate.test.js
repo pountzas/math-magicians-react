@@ -14,6 +14,10 @@ describe('calculate', () => {
     expect(calculate({ total: null, next: '0', operation: null }, '0')).toEqual({});
   });
 
+  test('it returns a negative number', () => {
+    expect(calculate({ total: null, next: '5', operation: null }, '+/-')).toEqual({ next: '-5' });
+  });
+
   test('it concatenates the number with the next value', () => {
     expect(calculate({ total: null, next: '5', operation: '+' }, '3')).toEqual({ total: null, operation: '+', next: '53' });
   });
